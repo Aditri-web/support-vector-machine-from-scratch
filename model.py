@@ -17,8 +17,14 @@ def standardize_features(x):
     return (x - mean) / std_replaced
     pass
 
-# Step 2 - initialize_parameters (not yet solved)
-# TODO: implement
+# Step 2 - initialize_parameters
+import numpy as np
+
+def initialize_parameters(n_features):
+    w = np.zeros(n_features)
+    b = 0.0
+    return {'w':w,'b':b}
+    pass
 
 # Step 3 - compute_scores (not yet solved)
 # TODO: implement
