@@ -26,8 +26,15 @@ def initialize_parameters(n_features):
     return {'w':w,'b':b}
     pass
 
-# Step 3 - compute_scores (not yet solved)
-# TODO: implement
+# Step 3 - compute_scores
+import numpy as np
+
+def compute_scores(x, params):
+    w = params["w"]
+    b = params["b"]
+    scores = np.dot(x, w) + b
+    return scores
+    pass
 
 # Step 4 - predict_from_scores (not yet solved)
 # TODO: implement
